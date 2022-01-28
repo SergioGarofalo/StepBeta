@@ -1,0 +1,15 @@
+Package: StepBeta
+Date: 28/01/2022
+Year: 2022
+Type: Package
+Title: Provide the stepwise procedure for Beta regression models
+Version: 0.1.0
+Author: Sergio Garofalo
+Maintainer: Sergio Garofalo <sergio.garofalo96@gmail.com>
+Description: Starting from model which class is <betareg>, the package provides the stepwise 
+              procedure to select the linear predictor. The default is AIC.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Imports: glue, stats, betareg
