@@ -37,12 +37,13 @@ During the procedure, StepBeta considers all the possible models which betareg c
 
 ## Prepare the data
 
+library(betareg)
 data <- iris
 data$Sepal.Length <- data$Sepal.Length/(max(data$Sepal.Length) + 0.01)
 
 
 fullModel <- betareg(Sepal.Length ~ Sepal.Width * Petal.Length *
-                                    Petal.Width * Species, data = iris)
+                                    Petal.Width * Species, data = data)
 reducedModel <- StepBeta(fullModel)
 
 summary(reducedModel)

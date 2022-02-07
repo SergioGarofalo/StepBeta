@@ -11,6 +11,9 @@ keep_formula_terms(the_formula, var_name)
 
 \item{var_name}{Names of the variables to keep}
 }
+\value{
+The function updates the formula, it keeps the variables defined by the user
+}
 \description{
 StepBeta internal object
 }

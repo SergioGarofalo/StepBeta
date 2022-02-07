@@ -1,5 +1,5 @@
 ###
-#' Stepwise model selection for Beta Regression
+#' @title Stepwise model selection for Beta Regression
 #' @description
 #' This function performs a stepwise algorithm to define the best linear predictor according to an user defined criterion (defeault is the Akaike Information Criterion aka AIC).
 #' It works for objects of class "betareg". If the object is different from "betareg" class, the function performs the classical "step" function in "stats" package.
@@ -41,12 +41,13 @@
 #'
 #' ## Prepare the data
 #'
+#' library(betareg)
 #' data <- iris
 #' data$Sepal.Length <- data$Sepal.Length/(max(data$Sepal.Length) + 0.01)
 #'
 #'
 #' fullModel <- betareg(Sepal.Length ~ Sepal.Width * Petal.Length *
-#'                                     Petal.Width * Species, data = iris)
+#'                                     Petal.Width * Species, data = data)
 #' reducedModel <- StepBeta(fullModel)
 #'
 #' summary(reducedModel)

@@ -9,6 +9,9 @@ remove_formula_interactions(the_formula)
 \arguments{
 \item{the_formula}{Formula of Beta Regression model}
 }
+\value{
+The function returns a reduced form of the formula. It excludes the interactive effects.
+}
 \description{
 StepBeta internal object
 }
